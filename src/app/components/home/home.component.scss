@@ -47,11 +47,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  
 }
 
 .hero-image img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 /* Seção de Recursos */
