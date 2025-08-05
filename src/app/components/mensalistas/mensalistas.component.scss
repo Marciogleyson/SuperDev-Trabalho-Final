@@ -1,0 +1,32 @@
+
+.input-dark {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  padding: 0.75rem !important;
+  border-radius: 0.5rem !important;
+}
+
+::ng-deep .p-inputtext::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+::ng-deep .p-dialog.custom-dark-dialog .p-dialog-content {
+  background-color: #1e1e1e;
+  color: white;
+}
+.p-button-success {
+  background-color: #00c853 !important;
+  color: white !important;
+  border: none !important;
+}
+.botao-azul {
+  background-color: #2196f3 !important; // azul
+  color: white !important;
+  border: none !important;
+}
+.botao-azul {
+  background-color: #007bff !important;
+  border: none !important;
+  color: white !important;
+}
