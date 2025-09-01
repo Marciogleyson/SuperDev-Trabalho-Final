@@ -9,7 +9,10 @@ import { Funcionarios } from "../models/funcionarios";
 export class FuncionariosService {
   private urlAPI: string;
   constructor(private http: HttpClient) {
-    this.urlAPI = "http://localhost:4200/";
+    // Usar a API FastAPI em desenvolvimento ou produção
+    this.urlAPI = window.location.hostname === 'localhost' ? 
+      "http://localhost:8000/api/funcionarios" : 
+      "https://api.rmt-park.com/api/funcionarios"; // Substituir pelo URL de produção quando disponível
   }
   cadastrar(funcionarios: Funcionarios): Observable<Funcionarios> {
     return this.http.post<Funcionarios>(this.urlAPI, Funcionarios);

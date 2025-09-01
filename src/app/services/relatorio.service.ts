@@ -9,7 +9,10 @@ import { Observable } from 'rxjs';
 export class RelatorioService {
   private urlAPI: string;
   constructor(private http: HttpClient) {
-    this.urlAPI = "http//localhost:4200/"
+    // Usar a API FastAPI em desenvolvimento ou produção
+    this.urlAPI = window.location.hostname === 'localhost' ? 
+      "http://localhost:8000/api/relatorios" : 
+      "https://api.rmt-park.com/api/relatorios"; // Substituir pelo URL de produção quando disponível
   }
 
   obterTodos(): Observable<Relatorio[]> {

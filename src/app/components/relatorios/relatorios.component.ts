@@ -175,44 +175,44 @@ export class RelatorioComponent implements OnInit {
   imprimir() {
     window.print();
   }
-  adicionarDadosFicticios() {
-    const agora = new Date();
-    const dadosExemplo = [
-      {
-        placa: 'ASA3E55',
-        tipo: 'Mensalista',
-        dataHoraEntrada: '2025-08-06T08:00:00',
-        dataHoraSaida: '2025-08-06T10:00:00',
-        valorPago: 20,
-        formaPagamento: 'PIX',
-        statusPagamento: 'Pago'
-      },
-      {
-        placa: 'XYZ1234',
-        tipo: 'Diarista',
-        dataHoraEntrada: '2025-08-06T09:30:00',
-        dataHoraSaida: '2025-08-06T11:30:00',
-        valorPago: 15,
-        formaPagamento: 'Dinheiro',
-        statusPagamento: 'Pendente'
-      },
-      {
-        placa: 'ABC9876',
-        tipo: 'Diarista',
-        dataHoraEntrada: '2025-08-06T12:00:00',
-        dataHoraSaida: '2025-08-06T14:00:00',
-        valorPago: 25,
-        formaPagamento: 'Cartão',
-        statusPagamento: 'Pago'
-      }
-    ];
+  // adicionarDadosFicticios() {
+  //   const agora = new Date();
+  //   const dadosExemplo = [
+  //     {
+  //       placa: 'ASA3E55',
+  //       tipo: 'Mensalista',
+  //       dataHoraEntrada: '2025-08-06T08:00:00',
+  //       dataHoraSaida: '2025-08-06T10:00:00',
+  //       valorPago: 20,
+  //       formaPagamento: 'PIX',
+  //       statusPagamento: 'Pago'
+  //     },
+  //     {
+  //       placa: 'XYZ1234',
+  //       tipo: 'Diarista',
+  //       dataHoraEntrada: '2025-08-06T09:30:00',
+  //       dataHoraSaida: '2025-08-06T11:30:00',
+  //       valorPago: 15,
+  //       formaPagamento: 'Dinheiro',
+  //       statusPagamento: 'Pendente'
+  //     },
+  //     {
+  //       placa: 'ABC9876',
+  //       tipo: 'Diarista',
+  //       dataHoraEntrada: '2025-08-06T12:00:00',
+  //       dataHoraSaida: '2025-08-06T14:00:00',
+  //       valorPago: 25,
+  //       formaPagamento: 'Cartão',
+  //       statusPagamento: 'Pago'
+  //     }
+  //   ];
 
-    localStorage.setItem('relatorios', JSON.stringify(dadosExemplo));
-    this.messageService.add({
-      severity: 'success',
-      summary: 'Dados Fictícios',
-      detail: 'Registros adicionados com sucesso!',
-    });
-    this.carregarRelatorios();
-  }
+  //   localStorage.setItem('relatorios', JSON.stringify(dadosExemplo));
+  //   this.messageService.add({
+  //     severity: 'success',
+  //     summary: 'Dados Fictícios',
+  //     detail: 'Registros adicionados com sucesso!',
+  //   });
+  //   this.carregarRelatorios();
+  // }
 }
